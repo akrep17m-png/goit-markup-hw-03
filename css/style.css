@@ -408,18 +408,7 @@ PAGE FOOTER
 }
 
 .page-footer
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-
-    margin-left: 156px;
-}
-
-.page-footer
-.container
-.logo {
+.logo-footer {
     margin-bottom: 16px;
     display: inline-block;
 
@@ -433,7 +422,7 @@ PAGE FOOTER
 }
 
 .page-footer 
-.logo 
+.logo-footer
 .accent {
     color: #f4f4fd;
 }
