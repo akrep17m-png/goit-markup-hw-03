@@ -31,17 +31,43 @@ img {
 }
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 156px;
     padding-right: 156px;    
 }
 
 /* HEADER STYLE */
 
+.page-header 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.page-header 
+.nav-list {
+    display: flex;
+    width: 261px;
+    height: 24px;
+}
+
 .page-header
 .nav-list
 .logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+
+    width: 115px;
+    height: 24px;
+    margin-right: 76px;
+
     /* Typography */
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -59,9 +85,21 @@ img {
     color: #2e2f42;
 }
 
+.page-header .list-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+}
+.page-header .list-2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
 .page-header
 .nav-list
-.link {
+.link {    
     font-weight: 500;    
     color: #2e2f42;
 }
