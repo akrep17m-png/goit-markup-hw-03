@@ -315,6 +315,8 @@ SECTION TEAM
 .page-main 
 .section-team 
 .team-name {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -339,10 +341,10 @@ PORTFOLIO SECTION
 .page-main 
 .portfolio 
 .container {
-    display: flex;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -412,15 +414,14 @@ PAGE FOOTER
     gap: 16px;
     justify-content: center;
 
-    width: 264px;
-    padding: 0;
     margin-left: 156px;
 }
 
-.page-footer 
+.page-footer
+.container
 .logo {
-    display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
 
     font-weight: 700;
     font-size: 18px;
@@ -439,5 +440,6 @@ PAGE FOOTER
 
 .page-footer 
 .footer-text {
+    max-width: 264px;
     color: #f4f4fd;
 }
