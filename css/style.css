@@ -30,6 +30,10 @@ img {
     max-width: 100%;
 }
 
+section {
+    padding: 120px 120px;
+}
+
 .container {
     max-width: 100%;
     margin-left: 0;
@@ -140,11 +144,19 @@ SECTION ONE
 .page-main 
 .section-one {
     background-color: #2e2f42;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-main 
 .section-one 
 .title {
+    width: 496px;
+    height: 120;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -156,6 +168,20 @@ SECTION ONE
 .page-main 
 .section-one 
 .order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    padding: 0;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
     /* TYPOGRAPHY */
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -181,7 +207,33 @@ SECTION TWO
 .section-two 
 .section-title {
     letter-spacing: 0.02em;
-    color: #fff;    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section-two
+.feature-list {
+    width: 1128px;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+
+}
+.section-two 
+.feature-list
+.feature {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .page-main 
@@ -202,6 +254,22 @@ SECTION TEAM
 }
 
 .page-main 
+.section-team
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-team
+.team-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.page-main 
 .section-team 
 .section-title {
     font-weight: 700;
@@ -215,6 +283,18 @@ SECTION TEAM
 .page-main 
 .section-team 
 .team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px;
+    width: 264px;
+    height: 380px;
+
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #fff;
 }
 
@@ -237,6 +317,17 @@ SECTION TEAM
 /* 
 PORTFOLIO SECTION 
 */
+
+.page-main 
+.portfolio 
+.container {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .page-main 
 .portfolio 
 .portfolio-title {
@@ -247,6 +338,28 @@ PORTFOLIO SECTION
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+}
+
+.page-main 
+.portfolio 
+.port-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.portfolio 
+.port-box
+.port-list {
+    border: 1px solid #404bbf;
+    width: 360px;
+    height: 420px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .page-main 
@@ -263,6 +376,18 @@ PAGE FOOTER
 */
 .page-footer {
     background-color: #2e2f42;
+    height: 312px;
+}
+
+.page-footer
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 264px;
+    height: 112px;
 }
 
 .page-footer 
