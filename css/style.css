@@ -30,33 +30,29 @@ img {
     max-width: 100%;
 }
 
-section {
-    padding: 120px 120px;
-}
-
 .container {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 156px;
-    padding-right: 156px;    
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 /* HEADER STYLE */
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .page-header 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
 }
 
 .page-header 
 .nav-list {
+    align-items: center;
     display: flex;
     width: 261px;
-    height: 24px;
 }
 
 .page-header
@@ -69,7 +65,6 @@ section {
     gap: 0px;
 
     width: 115px;
-    height: 24px;
     margin-right: 76px;
 
     /* Typography */
@@ -89,14 +84,16 @@ section {
     color: #2e2f42;
 }
 
-.page-header .list-1 {
+.page-header 
+.list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
 }
-.page-header .list-2 {
+.page-header 
+.list-contact {
     display: flex;
     justify-content: flex-end;
     gap: 40px;
@@ -106,6 +103,7 @@ section {
 .link {    
     font-weight: 500;    
     color: #2e2f42;
+    padding: 24px 0
 }
 
 .page-header
@@ -144,18 +142,17 @@ SECTION ONE
 .page-main 
 .section-one {
     background-color: #2e2f42;
-    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 188px 0;
 }
 
 .page-main 
 .section-one 
 .title {
-    width: 496px;
-    height: 120;
+    max-width: 496px;
 
     font-weight: 700;
     font-size: 56px;
@@ -168,15 +165,16 @@ SECTION ONE
 .page-main 
 .section-one 
 .order-button {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
 
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     padding: 0;
     margin-top: 48px;
@@ -203,6 +201,11 @@ SECTION ONE
 /* 
 SECTION TWO 
 */
+.page-main
+.section-two {
+    padding: 120px 0;
+}
+
 .page-main 
 .section-two 
 .section-title {
@@ -234,11 +237,14 @@ SECTION TWO
     justify-content: flex-start;
     flex-direction: column;
     gap: 8px;
+
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .page-main 
 .section-two
 .list-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -250,6 +256,7 @@ SECTION TEAM
 */
 .page-main
 .section-team {
+    padding: 120px 0;
     background: #f4f4fd;
 }
 
@@ -272,6 +279,7 @@ SECTION TEAM
 .page-main 
 .section-team 
 .section-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -280,6 +288,7 @@ SECTION TEAM
     text-align: center;
     color: #2e2f42;
 }
+
 .page-main 
 .section-team 
 .team {
@@ -291,11 +300,16 @@ SECTION TEAM
 
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px;
-    width: 264px;
-    height: 380px;
+    flex-basis: calc((100% - 72px) / 4);
 
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #fff;
+}
+
+.section-team 
+.team
+.container {
+    padding: 32px 0;
 }
 
 .page-main 
@@ -317,6 +331,10 @@ SECTION TEAM
 /* 
 PORTFOLIO SECTION 
 */
+.page-main 
+.portfolio {
+    padding: 120px 0 120px 0;
+}
 
 .page-main 
 .portfolio 
@@ -331,6 +349,7 @@ PORTFOLIO SECTION
 .page-main 
 .portfolio 
 .portfolio-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -345,26 +364,33 @@ PORTFOLIO SECTION
 .port-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     margin-top: 72px;
 }
 
 .portfolio 
 .port-box
 .port-list {
-    border: 1px solid #404bbf;
-    width: 360px;
-    height: 420px;
+    width: calc((100% - 48px) / 3);
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
     gap: 8px;
+}
+.portfolio 
+.port-box 
+.port-list 
+.container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .page-main 
 .portfolio 
 .port-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -376,7 +402,7 @@ PAGE FOOTER
 */
 .page-footer {
     background-color: #2e2f42;
-    height: 312px;
+    padding: 100px 0;
 }
 
 .page-footer
@@ -387,13 +413,15 @@ PAGE FOOTER
     justify-content: center;
 
     width: 264px;
-    height: 112px;
     padding: 0;
     margin-left: 156px;
 }
 
 .page-footer 
 .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+
     font-weight: 700;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
