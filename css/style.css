@@ -409,9 +409,9 @@ PAGE FOOTER
 
 .page-footer
 .logo-footer {
-    margin-bottom: 16px;
     display: inline-block;
-
+    margin-bottom: 16px;
+    
     font-weight: 700;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
