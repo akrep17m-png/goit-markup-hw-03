@@ -83,8 +83,6 @@ body {
 }
 
 .section {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 120px 0;
 }
 /* HEADER STYLE */
@@ -103,7 +101,6 @@ body {
 .header-nav {
   align-items: center;
   display: flex;
-  width: 261px;
 }
 
 .logo-header {
@@ -114,8 +111,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 0px;
-  width: 115px;
   /* Typography */
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -178,9 +173,6 @@ SECTION HERO
 */
 .section-hero {
   padding: 188px 0;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   /* Visual */
   background-color: var(--navy-blue);
 }
@@ -257,7 +249,6 @@ SECTION FEATURES
 }
 
 .features-title {
-  margin-bottom: 8px;
   /* Typography */
   font-weight: 500;
   font-size: 20px;
@@ -296,13 +287,11 @@ SECTION TEAM
 }
 
 .team-item {
-  padding: 0px 0px 32px;
   /* Box model */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
   flex-basis: calc((100% - 72px) / 4);
 
   background-color: var(--white);
@@ -317,7 +306,6 @@ SECTION TEAM
 }
 
 .team-specialist {
-  margin-bottom: 8px;
   /* Typography */
   font-weight: 500;
   font-size: 20px;
@@ -389,8 +377,6 @@ PAGE FOOTER
 
 .page-footer {
   padding: 100px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 
   background-color: var(--navy-blue);
 }
