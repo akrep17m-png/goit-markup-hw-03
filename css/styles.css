@@ -139,6 +139,7 @@ body {
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   color: var(--navy-blue);
   padding: 24px 0;
@@ -150,9 +151,7 @@ body {
 }
 
 .header-contacts {
-  display: block;
   font-style: normal;
-  margin: 24px 0;
 }
 
 .list-contacts {
@@ -162,8 +161,10 @@ body {
 }
 
 .contacts-link {
+  display: block;
   text-decoration: none;
   color: var(--slate);
+  padding: 24px 0;
 }
 
 .contacts-link:hover,
@@ -281,7 +282,6 @@ SECTION TEAM
 .team-list {
   display: flex;
   gap: 24px;
-  margin-top: 72px;
 }
 
 .team-title {
@@ -358,7 +358,6 @@ PORTFOLIO SECTION
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  margin-top: 72px;
 }
 
 .portfolio-item {
