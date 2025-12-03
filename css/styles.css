@@ -306,6 +306,7 @@ SECTION TEAM
 }
 
 .team-specialist {
+  margin-bottom: 8px;
   /* Typography */
   font-weight: 500;
   font-size: 20px;
